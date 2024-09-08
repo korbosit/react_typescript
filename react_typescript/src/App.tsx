@@ -1,9 +1,10 @@
 import "./App.css";
-import { MutableRef } from "./components/ref/MutableRef";
+import { Counter } from "./components/ref/class/Counter";
+
 function App() {
     return (
         <div className="App">
-            <MutableRef />
+            <Counter message="the counter value is" />
         </div>
     );
 }
