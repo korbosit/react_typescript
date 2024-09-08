@@ -1,13 +1,12 @@
 import "./App.css";
-import { ThemeContextProvider } from "./components/context/ThemeContext";
-import Box from "./components/context/Box";
-
+import { UserContextProvider } from "./components/context/UserContext";
+import User from "./components/state/User";
 function App() {
     return (
         <div className="App">
-            <ThemeContextProvider>
-                <Box />
-            </ThemeContextProvider>
+            <UserContextProvider>
+                <User />
+            </UserContextProvider>
         </div>
     );
 }
